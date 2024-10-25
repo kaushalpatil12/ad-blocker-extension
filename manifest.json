@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Blocker",
+    "version": "1.0",
+    "description": "A simple ad blocker that blocks all ads, including YouTube.",
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess",
+      "tabs"
+    ],
+    "host_permissions": [
+      "*://*/*"
+    ],
+    "icons": {
+      "48": "icon.png"
+    },
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "block_ads",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    }
+  }
+  
